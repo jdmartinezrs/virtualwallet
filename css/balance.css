@@ -1,0 +1,291 @@
+@import url(variable.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.banner{
+    background: var(--color-primario);
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.banner img{
+    width: 100%;
+    height: 10px;
+    object-fit: cover;
+    border-bottom-left-radius: 90%; 
+    border-bottom-right-radius: 90%;
+}
+
+.header {
+    width: 100%;
+    padding: 0 .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.logo__icono {
+}
+
+.logo__icono img {
+    width: 3em;
+}
+
+.logo__titulo {
+    /* background: orange; */
+    color: var(--color-ternario);
+    font-family: "SF-Pro-Text-Bold";
+    text-transform: uppercase;
+}
+
+.header__menu {
+}
+
+.header__menu i {
+    font-size: 3em;
+    color: var(--color-ternario);
+}
+
+.main{
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.main__top{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 31%;
+}
+
+
+.main__pelota{
+    background: var(--color-secundario);
+    width: 150px;
+    height: 150px; 
+    border-radius: 90%;  
+    display: flex;
+    position: relative;
+    top: -5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.main__pelota h4,
+.main__pelota p{
+    color: var(--color-ternario);
+    font-size: 1.3em;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+.main__pelota h4{
+    text-align: center;
+}
+
+.main__media{
+    width: 100%;
+    height: 10%;
+}
+
+.main__cajita{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2em;
+    position: relative;
+    top: -35px;
+    
+}
+
+.main__cajita button{
+    width: 5.5em;
+    height: 20%;
+    border-radius: 50px;
+    text-transform: capitalize;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__cajita .cajita1{
+    background: var(--color-primario);
+    color: var(--color-ternario);
+    border: var(--color-primario);
+    
+}
+
+.main__cajita .cajita2{
+    background: transparent;
+    color: var(--color-secundario);
+}
+
+.main__cajita .cajita3{
+    background: transparent;
+    color: var(--color-cuarto);
+}
+
+.main__media{
+    
+    margin-top: 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.main__imagen{
+    /*background: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__imagen img{
+    width: 100%; 
+    height: 100%;
+    top: -40px;
+    position: relative;
+}
+
+.main_boton{
+    margin-top: 60px;
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: rgba(127, 255, 212, 0.39);
+}
+
+.main_boton__icono{
+    color: var(--color-secundario);
+    position: absolute;
+    margin-bottom: 100px;
+    margin-right: 10px;
+}
+
+.main_boton__icono i{
+    font-size: 24px;
+    position: relative;
+    top: -20px;
+}
+
+.main_boton__texto{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.main_boton__texto h4{
+    line-height: 30px;
+    text-transform: capitalize;
+    position: relative;
+    top: -30px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main_boton__texto p{
+    color: #33404f96;
+    font-size: 11px;
+    position: relative;
+    top: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_boton h4,
+.main_boton p{
+    left: -55px;
+    top: -20px;
+}
+
+.main_boton__tarjeta{
+    width: 85%;
+    height: 85%;
+    display: flex;
+    position: relative;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_boton__tarjeta img{
+    width: 55%;
+    height: 55%;
+    top: -30px;
+    right: 25px;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    background: var(--color-primario);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img{
+    width: 2em;
+}
+
+.footer {
+    width: 100%;
+    background: var(--color-primario);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img {
+    width: 2em;
+}
+

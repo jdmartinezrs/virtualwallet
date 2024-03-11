@@ -1,0 +1,235 @@
+@import url(variable.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF-Pro-Text-Regular";
+}
+.header {
+    width: 100%;
+    padding: 0 .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-cuarto);
+}
+.footer {
+    width: 100%;
+    background: var(--color-primario);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img {
+    width: 2em;
+}
+
+.logo__icono {
+    /* background: green; */
+}
+
+.logo__icono img {
+    width: 3em;
+    color: var(--color-primario);
+}
+
+.footer {
+    width: 100%;
+    background: var(--color-primario);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: .5em 0;
+}
+
+.footer ul li a img {
+    width: 2em;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,1fr);
+    padding:  0.8em;
+    grid-template-areas: 
+    "investing"
+    "banner"
+    "banner"
+    "cards"
+    "colection"
+    "colection" 
+    "colection"
+    "colection"
+    "colection"
+    ;
+    grid-gap: 10px;
+}
+.main_title
+.main__title2{
+    grid-area: investing;
+    text-transform: capitalize;
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-family: "SF-Pro-Text-Bold";
+}
+.main__banner{
+    grid-area: banner;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__public{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.130);
+    grid-template-areas: 
+    "logo description"
+    ;
+    
+
+}
+.public__logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.public__logo div{
+    background:  var(--color-secundario);
+    position: absolute;
+    z-index: -1;
+    right: 50px;
+    width: 700px;
+    height: 400px;
+    right: 3px;
+    border-radius: 100%;
+    opacity: .3;
+}
+.public__description{
+    grid-area: description;
+    text-align: center;
+}
+.public__description p {
+    font-family: "SF-Pro-Text-regular";
+    color: var(--color-primario);
+    font-size: 1.3em;
+    margin-top: 15px;
+    
+}
+.public__description button{
+   border: none;
+   margin-top: 10px;
+   padding: 8px 25px;
+   border-radius: 50px;
+   background: var(--color-secundario);
+   font-family: "SF-Pro-Text-Bold";
+   color: var(--color-ternario);
+   text-transform: capitalize;
+}
+
+.public__description small{
+    display: block;
+    font-family: "SF-Pro-Text-regular";
+    color: var(--color-cuarto);
+}
+.description__close i{
+    padding: 2px;
+    border-radius: 100%;
+    color: var(--color-ternario);
+    background: var(--color-secundario);
+}
+.description__close{
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.public__logo img{
+    padding: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.main__title2{
+    grid-area: cards;
+}
+.main__cards{
+    
+    grid-area: colection;
+    display:flex;
+    gap: 10px;
+    
+    height: 320px;
+    overflow: scroll;
+    
+}
+
+.cards_item{
+    background-color: var(--color-primario);
+    flex: 1;
+    min-width: 200px;
+    background-image: url(../storage/imgs/card.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+
+}
+.card__item small{
+    position: absolute;
+    top: 30px;
+   
+    right:4vw;
+    color: var(--color-ternario);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card__item img{
+    position: absolute;
+    width: 35%;
+    left: 2vw;
+
+    
+    left: 2vw;
+    bottom:15 px
+}
