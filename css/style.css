@@ -1,3 +1,5 @@
+@import url(variable.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -27,9 +29,9 @@ body{
     align-items: center;
     flex-wrap: nowrap;
     position: sticky;
-    z-index: -1;
+    z-index: 2;
     top: 0;
-    background-color: var(--color-primario);
+    background: var(--color-primario);
 }
 
 .header__logo {
@@ -45,7 +47,7 @@ body{
 }
 
 .logo__icono img {
-    width: 3em;
+    width: 4em;
 }
 
 .logo__titulo {
@@ -72,7 +74,7 @@ body{
     /* background: green; */
     display: flex;
     flex-direction: column;
-    height: 120px;
+    margin-top: 35px;
     justify-content: center;
     padding: 0 0.5em
 }
@@ -167,11 +169,11 @@ progress[value]::-moz-progress-bar {
     padding: 1.5em 0.5em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
-    position: relative;
     gap: .5em;
-    z-index: 5;
 }
 .activities__service{
     /* background: blue; */
@@ -194,6 +196,45 @@ progress[value]::-moz-progress-bar {
     padding: 0.8em;
     gap: 15px;
 }
+
+.cards__item:nth-child(3) {
+    background-image: url(../storage/img/caraa.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .service__cards div{
     flex: 1;
     min-width: 30%;
@@ -277,7 +318,7 @@ i.bxs-down-arrow{
 
 .footer {
     width: 100%;
-    background: var(--color-primario);
+    background: var(--color-rojo);
     position: fixed;
     bottom: 0;
     z-index: 10;
